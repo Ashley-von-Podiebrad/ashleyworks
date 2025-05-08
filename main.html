@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张三的个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f8ff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #e3f2fd;
+            margin-bottom: 30px;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-item {
+            background: #f0f0f0;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .contact a {
+            color: #3498db;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="avatar.jpg" alt="头像" class="avatar">
+            <h1>张三</h1>
+            <p>Web开发工程师 | 技术爱好者</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>个人简介</h2>
+            <p>您好！我是张三，一名有3年前端开发经验的工程师。热爱编程和技术创新，擅长使用HTML/CSS/JavaScript构建现代化的Web应用。</p>
+        </section>
+
+        <section>
+            <h2>技能专长</h2>
+            <div class="skills">
+                <span class="skill-item">HTML5</span>
+                <span class="skill-item">CSS3</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">Vue.js</span>
+                <span class="skill-item">Node.js</span>
+                <span class="skill-item">Git</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>项目展示</h2>
+            <div class="project">
+                <h3>个人博客系统</h3>
+                <p>基于Vue + Node.js开发的个人博客平台，支持Markdown写作和文章分类管理。</p>
+            </div>
+            <div class="project">
+                <h3>在线商城系统</h3>
+                <p>全栈电商项目，包含前后端完整功能模块，日均访问量5000+。</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>联系方式</h2>
+            <p>📧 邮箱：<a href="mailto:zhangsan@example.com">zhangsan@example.com</a></p>
+            <p>🐱 GitHub：<a href="https://github.com/zhangsan">github.com/zhangsan</a></p>
+            <p>📱 微信：zhangsan123</p>
+        </section>
+    </div>
+</body>
+</html>
