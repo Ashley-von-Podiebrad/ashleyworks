@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>张三的个人主页</title>
+    <title>阿什莉工坊</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
         }
 
         body {
             line-height: 1.6;
             color: #333;
-            background-color: #f0f8ff;
+            background-color: #fff5f5;
         }
 
         .container {
@@ -27,8 +27,9 @@
         header {
             text-align: center;
             padding: 40px 0;
-            background-color: #e3f2fd;
+            background-color: #ffecec;
             margin-bottom: 30px;
+            border-bottom: 3px solid #ffb3b3;
         }
 
         .avatar {
@@ -41,9 +42,10 @@
         }
 
         h1 {
-            color: #2c3e50;
+            color: #cc0000;
             font-size: 2.5em;
             margin-bottom: 10px;
+            font-family: 'Georgia', serif;
         }
 
         section {
@@ -55,84 +57,67 @@
         }
 
         h2 {
-            color: #3498db;
-            border-bottom: 2px solid #3498db;
+            color: #ff6666;
+            border-bottom: 2px solid #ffb3b3;
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
 
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill-item {
-            background: #f0f0f0;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-        }
-
-        .contact a {
-            color: #3498db;
+        .project a {
+            color: #cc0000;
             text-decoration: none;
-            margin-right: 15px;
+            transition: color 0.3s;
         }
 
-        .contact a:hover {
+        .project a:hover {
+            color: #ff6666;
             text-decoration: underline;
         }
 
-        .project {
-            margin-bottom: 20px;
+        .steam {
+            color: #1b2838 !important;
+        }
+
+        .bilibili {
+            color: #00a1d6 !important;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="avatar.jpg" alt="头像" class="avatar">
-            <h1>张三</h1>
-            <p>Web开发工程师 | 技术爱好者</p>
+            <img src="avatar.png" alt="阿什莉的头像" class="avatar">
+            <h1>阿什莉工坊</h1>
+            <p>数字媒体技术专业 工学学士 | 游戏本地化爱好者</p>
         </div>
     </header>
 
     <div class="container">
         <section>
-            <h2>个人简介</h2>
-            <p>您好！我是张三，一名有3年前端开发经验的工程师。热爱编程和技术创新，擅长使用HTML/CSS/JavaScript构建现代化的Web应用。</p>
+            <h2>关于我</h2>
+            <p>✦ 数字媒体技术专业毕业，获工学学士学位</p>
+            <p>✦ 专注游戏文本汉化与本地化工作3年</p>
+            <p>✦ 精通中日英三语，熟悉游戏文化差异处理</p>
+            <p>✦ 坚持"信达雅"的翻译理念，累计完成50万+字游戏文本本地化</p>
         </section>
 
         <section>
-            <h2>技能专长</h2>
-            <div class="skills">
-                <span class="skill-item">HTML5</span>
-                <span class="skill-item">CSS3</span>
-                <span class="skill-item">JavaScript</span>
-                <span class="skill-item">Vue.js</span>
-                <span class="skill-item">Node.js</span>
-                <span class="skill-item">Git</span>
-            </div>
-        </section>
-
-        <section>
-            <h2>项目展示</h2>
+            <h2>项目作品</h2>
             <div class="project">
-                <h3>个人博客系统</h3>
-                <p>基于Vue + Node.js开发的个人博客平台，支持Markdown写作和文章分类管理。</p>
+                <h3>《宿命传说：导演剪辑版》汉化补丁</h3>
+                <p>历时2年10个月完成的完整汉化项目，大受好评</p>
+                <p>▶ <a href="https://www.bilibili.com/video/av114426048942215/" class="bilibili" target="_blank">哔哩哔哩发布页</a>（非官方汉化）</p>
             </div>
             <div class="project">
-                <h3>在线商城系统</h3>
-                <p>全栈电商项目，包含前后端完整功能模块，日均访问量5000+。</p>
+                <h3>《猎杀弗里曼》Steam版</h3>
+                <p>参与简体中文版文本翻译与润色工作</p>
+                <p>▶ <a href="https://store.steampowered.com/app/723390/Hunt_Down_The_Freeman/" class="steam" target="_blank">Steam商店页面</a></p>
             </div>
         </section>
 
         <section class="contact">
             <h2>联系方式</h2>
-            <p>📧 邮箱：<a href="mailto:zhangsan@example.com">zhangsan@example.com</a></p>
-            <p>🐱 GitHub：<a href="https://github.com/zhangsan">github.com/zhangsan</a></p>
-            <p>📱 微信：zhangsan123</p>
+            <p>哔哩哔哩：<a href="https://space.bilibili.com/661762596p" target="_blank">@阿什莉</a></p>
         </section>
     </div>
 </body>
